@@ -1,0 +1,200 @@
+/***************************************************************************************************
+Extension Name: ex-img-card 
+Extension Version:  
+File: base file
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+Extension Name: ex-img-card 
+File: All Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: All Shared Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: Shared Mixins
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+File: Variables
+Owner:  
+***************************************************************************************************/
+/* $font_en : 'Roboto',Arial, sans-serif; */
+/***************************************************************************************************
+Extension Name: ex-img-card 
+File: Overrides 
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: ADGE Default Palette
+Owner:  
+***************************************************************************************************/
+/* Primary */
+/* Secondary */
+/* Inverted */
+/* Teritary */
+/* highlight */
+/* Label */
+/* Links */
+/* Separators colors */
+/* Section title */
+/***************************************************************************************************
+Extension Name: ex-img-card 
+File: Variables
+Author: TAMM
+***************************************************************************************************/
+.ex-img-card-v3 .imagecardv3_wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  min-height: 95vh;
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  html:not([dir="rtl"]) .ex-img-card-v3 .imagecardv3_wrapper,
+  .translated-ltr .ex-img-card-v3 .imagecardv3_wrapper {
+    margin-left: 20px;
+  }
+  html[dir="rtl"] .ex-img-card-v3 .imagecardv3_wrapper,
+  .translated-rtl .ex-img-card-v3 .imagecardv3_wrapper {
+    margin-right: 20px;
+  }
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper a {
+  color: inherit;
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  .ex-img-card-v3 .imagecardv3_wrapper {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    min-height: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .ex-img-card-v3 .imagecardv3_wrapper::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (max-device-width: 922px), screen and (max-width: 922px) {
+  .ex-img-card-v3 .imagecardv3_wrapper {
+    min-height: 72vh;
+  }
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper .item-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 75vh;
+  background: center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-transition: -webkit-box-flex 0.95s;
+  transition: -webkit-box-flex 0.95s;
+  transition: flex 0.95s;
+  transition: flex 0.95s, -webkit-box-flex 0.95s, -ms-flex 0.95s;
+  transition: flex 0.95s, -webkit-box-flex 0.95s, -ms-flex 0.95s;
+  -webkit-transition: flex 0.95s;
+  -moz-transition: flex 0.95s;
+  -o-transition: flex 0.95s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 75%;
+    flex: 1 0 75%;
+    min-height: 61.2vh !important;
+  }
+}
+
+@media screen and (max-device-width: 922px), screen and (max-width: 922px) {
+  .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper {
+    min-height: 40vh;
+  }
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper .item-wrapper.expand {
+  -webkit-box-flex: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper .item-wrapper.hideContent .content_description {
+  display: none;
+  -webkit-transition: display 0.4s ease-in-out;
+  transition: display 0.4s ease-in-out;
+  /*  opacity: 0;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    transition:
+                        opacity 0.3s ease-in-out,
+                        background-color 0.1s linear; */
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description {
+  /*   background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #fff;
+  padding: 40px 40px 10px 40px;
+  position: absolute;
+  /*  box-shadow: 0px -1px 1px 0.5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 1px 1px 17px -11px rgba(0, 0, 0, 0.3);
+}
+
+html:not([dir="rtl"]) .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description,
+.translated-ltr .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description {
+  text-align: left;
+}
+
+html[dir="rtl"] .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description,
+.translated-rtl .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description {
+  text-align: right;
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  .ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description {
+    width: 100%;
+    opacity: 1;
+    background-color: #fff;
+    padding: 40px 24px 10px 24px;
+  }
+}
+
+.ex-img-card-v3 .imagecardv3_wrapper .item-wrapper .content_description.active {
+  width: 100%;
+  opacity: 1;
+  background-color: #fff;
+  box-shadow: none;
+}

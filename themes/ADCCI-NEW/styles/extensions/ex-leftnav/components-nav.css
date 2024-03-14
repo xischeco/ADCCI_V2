@@ -1,0 +1,219 @@
+/***************************************************************************************************
+Extension Name: ex-leftnav
+Extension Version: 
+File: base file
+Owner: 
+***************************************************************************************************/
+/***************************************************************************************************
+Extension Name: ex-leftnav
+File: All Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: All Shared Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: Shared Mixins
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+File: Variables
+Owner:  
+***************************************************************************************************/
+/* $font_en : 'Roboto',Arial, sans-serif; */
+/***************************************************************************************************
+Extension Name: ex-leftnav 
+File: Overrides 
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: ADGE Default Palette
+Owner:  
+***************************************************************************************************/
+/* Primary */
+/* Secondary */
+/* Inverted */
+/* Teritary */
+/* highlight */
+/* Label */
+/* Links */
+/* Separators colors */
+/* Section title */
+.ex-nav {
+  margin: 40px 0 80px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ex-nav--fixedtop {
+  position: fixed;
+  top: -40px;
+  background: #fff;
+  padding: 40px 0 0;
+  z-index: 999;
+  margin: 40px 0px 80px 0px;
+}
+
+html:not([dir="rtl"]) .ex-nav--fixedtop,
+.translated-ltr .ex-nav--fixedtop {
+  left: 0;
+}
+
+html[dir="rtl"] .ex-nav--fixedtop,
+.translated-rtl .ex-nav--fixedtop {
+  right: 0;
+}
+
+.ex-nav--fixedtop nav ul {
+  -webkit-transform: translate(8%, -20%);
+  -ms-transform: translate(8%, -20%);
+  transform: translate(8%, -20%);
+}
+
+.ex-nav nav {
+  background: 0 0;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  /* Firefox 64 */
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+@media screen and (max-device-width: 767px), screen and (max-width: 767px) {
+  .ex-nav nav {
+    overflow-x: scroll;
+  }
+}
+
+.ex-nav nav::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.ex-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0;
+  font-size: 0;
+  width: 100%;
+}
+
+html:not([dir="rtl"]) .ex-nav ul,
+.translated-ltr .ex-nav ul {
+  padding-left: 2px;
+}
+
+html[dir="rtl"] .ex-nav ul,
+.translated-rtl .ex-nav ul {
+  padding-right: 2px;
+  text-align: right;
+}
+
+.ex-nav ul li {
+  list-style: none;
+  list-style: none;
+  display: inline;
+  padding: 0 12px;
+}
+
+html:not([dir="rtl"]) .ex-nav ul li:first-child,
+.translated-ltr .ex-nav ul li:first-child {
+  padding-left: 0;
+}
+
+html[dir="rtl"] .ex-nav ul li:first-child,
+.translated-rtl .ex-nav ul li:first-child {
+  padding-right: 0;
+}
+
+html:not([dir="rtl"]) .ex-nav ul li:last-child,
+.translated-ltr .ex-nav ul li:last-child {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .ex-nav ul li:last-child,
+.translated-rtl .ex-nav ul li:last-child {
+  padding-left: 0;
+}
+
+.ex-nav ul li.active a {
+  position: relative;
+  font-weight: 700;
+  color: #004860;
+}
+
+.ex-nav ul li a {
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  display: block;
+  white-space: normal;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.47px;
+  white-space: nowrap;
+  color: #000;
+}
+
+.ex-nav ul li a:hover, .ex-nav ul li a:focus {
+  text-decoration: none;
+  font-weight: 700;
+  color: #004860;
+}
+
+/* &--fixed {
+    &__left {
+        position: fixed;
+        padding: 0 15px;
+
+        @include ltr {
+            margin-left: -15px;
+        }
+
+        @include rtl {
+            margin-right: -15px;
+        }
+
+        top: 205px;
+
+        nav {
+            ul {
+                li {
+                    &.active {
+                        a {
+                            &:after {
+                                @include ltr {
+                                    left: -2px;
+                                }
+
+                                @include rtl {
+                                    right: -2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--fixedbottom {
+        &__left {
+            position: absolute !important;
+            bottom: 0;
+            top: inherit !important;
+        }
+    }
+} */

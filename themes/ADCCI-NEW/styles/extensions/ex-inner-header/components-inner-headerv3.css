@@ -1,0 +1,86 @@
+/***************************************************************************************************
+Extension Name: ex-inner-header 
+Extension Version:  
+File: base file
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+Extension Name: ex-inner-header 
+File: All Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: All Shared Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: Shared Mixins
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+File: Variables
+Owner:  
+***************************************************************************************************/
+/* $font_en : 'Roboto',Arial, sans-serif; */
+/***************************************************************************************************
+Extension Name: ex-inner-header 
+File: Overrides 
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: ADGE Default Palette
+Owner:  
+***************************************************************************************************/
+/* Primary */
+/* Secondary */
+/* Inverted */
+/* Teritary */
+/* highlight */
+/* Label */
+/* Links */
+/* Separators colors */
+/* Section title */
+.ex-inner-header-v3__banner-wrapper {
+  padding-top: 210px;
+}
+
+.ex-inner-header-v3__banner-wrapper__title .caption-title {
+  padding-bottom: 24px;
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 {
+  padding: 80px 0;
+}
+
+@media screen and (max-device-width: 922px), screen and (max-width: 922px) {
+  .ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 {
+    padding: 40px 0;
+  }
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 .breadcrumb {
+  background-color: transparent;
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 .breadcrumb .breadcrumb-item {
+  font-size: 12px;
+  color: #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 .breadcrumb .breadcrumb-item .home {
+  color: black;
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 .breadcrumb .breadcrumb-item a {
+  color: #000;
+  font-size: 12px;
+}
+
+.ex-inner-header-v3__banner-wrapper .page-breadcrumb-v3 .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+  content: "/";
+  color: black;
+}

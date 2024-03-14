@@ -1,0 +1,84 @@
+/***************************************************************************************************
+Extension Name: ex-accordion 
+Extension Version:  
+File: base file
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+Extension Name: ex-accordion 
+File: All Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: All Shared Exports
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: Shared Mixins
+Owner:  
+***************************************************************************************************/
+/***************************************************************************************************
+File: Variables
+Owner:  
+***************************************************************************************************/
+/* $font_en : 'Roboto',Arial, sans-serif; */
+/***************************************************************************************************
+Extension Name: ex-accordion 
+File: Overrides 
+Author: TAMM
+***************************************************************************************************/
+/***************************************************************************************************
+File: ADGE Default Palette
+Owner:  
+***************************************************************************************************/
+/* Primary */
+/* Secondary */
+/* Inverted */
+/* Teritary */
+/* highlight */
+/* Label */
+/* Links */
+/* Separators colors */
+/* Section title */
+/***************************************************************************************************
+Extension Name: ex-accordion 
+File: Variables
+Author: TAMM
+***************************************************************************************************/
+.ex-accordionv2__item {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 24px 0;
+}
+
+.ex-accordionv2__item .collapse:not(.show) {
+  display: none;
+}
+
+.ex-accordionv2__item__header {
+  cursor: pointer;
+  position: relative;
+}
+
+.ex-accordionv2__item__header .icon__wrapper {
+  position: absolute;
+  top: 8px;
+}
+
+html:not([dir="rtl"]) .ex-accordionv2__item__header .icon__wrapper,
+.translated-ltr .ex-accordionv2__item__header .icon__wrapper {
+  right: 5px;
+}
+
+html[dir="rtl"] .ex-accordionv2__item__header .icon__wrapper,
+.translated-rtl .ex-accordionv2__item__header .icon__wrapper {
+  left: 5px;
+}
+
+.ex-accordionv2__item__content__body {
+  padding-top: 24px;
+}
+
+.on-page-editor .collapse:not(.show) {
+  display: block !important;
+}

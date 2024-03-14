@@ -1,0 +1,212 @@
+/***************************************************************************************************
+File: ADGE Default Palette
+Owner: #{$ProjectOwner} 
+***************************************************************************************************/
+
+// Palette colors
+$primary-color: #004860 !default;
+$primary-color2: #fb7415 !default;
+$primary-color3: #fbb815 !default;
+$primary-color4: #2b2849 !default;
+$primary-color5: #454262 !default;
+
+$secondary-color: #002a5c !default;
+$secondary-color2: #9c25b0 !default;
+$secondary-color3: #e92063 !default;
+$secondary-color4: #f44236 !default;
+$secondary-color5: #3f51b5 !default;
+
+$ADGE-500: #0081c6 !default;
+$ADGE-300: #1da3eb !default;
+$ADGE-900: #006195 !default;
+
+$grey-900: #3f3e45 !default;
+$grey-800: #6c6b70 !default;
+$grey-700: #89888c !default;
+$grey-600: #9f9fa2 !default;
+$grey-500: #b2b2b5 !default;
+$grey-400: #afafaf !default;
+$grey-300: #c4c4c4 !default;
+$grey-200: #d6d6d6 !default;
+$grey-100: #f5f5f7 !default;
+$grey-50: #fafafa !default;
+
+$black-color: #000 !default;
+$white-color: #ffffff !default;
+
+$danger-color: #ff5f60 !default;
+$danger-border: #ff6060 !default;
+$success-color: #86c083 !default;
+$success-border: #87c084 !default;
+$warning-color: #fde3b9 !default;
+$warning-border: #faa317 !default;
+
+// Globals
+$layout-body-color: $grey-900 !default;
+$layout-border-radius: 3px !default;
+
+$body-bg: $white-color !default;
+$body-color: $layout-body-color !default;
+
+// Buttons
+/* Primary */
+$layout-button-border-radius: $layout-border-radius !default;
+
+$layout-button-bg: $primary-color !default;
+$layout-button-color: $white-color !default;
+$layout-button-hover-bg: $primary-color !default;
+$layout-button-hover-color: $white-color !default;
+$layout-button-focus-bg: $primary-color2 !default;
+$layout-button-focus-color: $primary-color !default;
+$layout-button-disabled-bg: $grey-200 !default;
+$layout-button-disabled-color: $white-color !default;
+
+/* Secondary */
+$layout-button-secondary-bg: transparent !default;
+$layout-button-secondary-border-color: $white-color !default;
+$layout-button-secondary-border-width: 2px !default;
+$layout-button-secondary-color: $white-color !default;
+$layout-button-secondary-hover-bg: transparent !default;
+$layout-button-secondary-hover-border-color: $white-color !default;
+$layout-button-secondary-hover-color: $white-color !default;
+$layout-button-secondary-focus-bg: transparent !default;
+$layout-button-secondary-focus-color: $white-color !default;
+$layout-button-secondary-focus-border-color: $white-color !default;
+$layout-button-secondary-disabled-border-color: $grey-200 !default;
+$layout-button-secondary-disabled-bg: transparent !default;
+$layout-button-secondary-disabled-color: $grey-500 !default;
+
+/* Inverted */
+$layout-button-inverted-bg: transparent !default;
+$layout-button-inverted-border-color: $primary-color !default;
+$layout-button-inverted-border-width: 1px !default;
+$layout-button-inverted-color: $primary-color !default;
+$layout-button-inverted-hover-bg: transparent !default;
+$layout-button-inverted-hover-color: $primary-color !default;
+$layout-button-inverted-hover-border-color: $primary-color !default;
+$layout-button-inverted-focus-bg: $black-color !default;
+$layout-button-inverted-focus-color: $white-color !default;
+$layout-button-inverted-disabled-border-color: $primary-color !default;
+$layout-button-inverted-disabled-bg: transparent !default;
+$layout-button-inverted-disabled-color: $grey-500 !default;
+
+/* Teritary */
+$layout-button-tertiary-bg: $grey-800 !default;
+$layout-button-tertiary-color: $white-color !default;
+$layout-button-tertiary-hover-bg: $grey-500 !default;
+$layout-button-tertiary-hover-color: $primary-color4 !default;
+$layout-button-tertiary-focus-bg: $grey-900 !default;
+$layout-button-tertiary-focus-color: $white-color !default;
+$layout-button-tertiary-disabled-bg: $grey-200 !default;
+$layout-button-tertiary-disabled-color: $grey-500 !default;
+
+/* highlight */
+$layout-button-quaternary-bg: transparent !default;
+$layout-button-quaternary-border-color: $grey-900 !default;
+$layout-button-quaternary-border-width: 2px !default;
+$layout-button-quaternary-color: $grey-900 !default;
+$layout-button-quaternary-hover-bg: $primary-color4 !default;
+$layout-button-quaternary-hover-border-color: $primary-color4 !default;
+$layout-button-quaternary-hover-color: $white-color !default;
+$layout-button-quaternary-focus-bg: $black-color !default;
+$layout-button-quaternary-focus-color: $white-color !default;
+$layout-button-quaternary-focus-border-color: $white-color !default;
+$layout-button-quaternary-disabled-border-color: $grey-200 !default;
+$layout-button-quaternary-disabled-bg: transparent !default;
+$layout-button-quaternary-disabled-color: $grey-500 !default;
+$layout-button-quaternary-inverted-color: $primary-color4 !default;
+$layout-button-quaternary-border-radius: 3px !default;
+
+/* Label */
+$layout-label-default-color: $grey-700 !default;
+
+/* Links */
+$layout-link-default-color: $secondary-color5 !default;
+$layout-link-default-hover-color: $primary-color !default;
+$layout-link-default-focus-color: $primary-color !default;
+$layout-link-default-disabled-color: $grey-500 !default;
+
+/* Separators colors */
+$layout-hr-color: $grey-200 !default;
+
+/* Section title */
+$layout-titleblock-primary-color: $primary-color !default;
+$layout-titleblock-secondary-color: $secondary-color !default;
+
+// Carousels
+$layout-carousel-arrow-primary-color: #939393;
+$layout-carousel-arrow-font-primary-color: $white-color !default;
+$layout-carousel-arrow-bg-hover-color: rgba(0, 72, 96, 0.5) !default;
+$layout-carousel-arrow-font-hover-color: $white-color !default;
+$layout-carousel-border-color: $grey-200 !default;
+$layout-carousel-border-width: 2px !default;
+$layout-carousel-hover-border-color: rgb(127, 163, 175);
+$layout-carousel-button-color: $grey-200 !default;
+
+// go to top
+$layout-gototop-bg-color: $primary-color !default;
+$layout-gototop-color: $white-color !default;
+
+//custom
+
+$layout-button-height: 52px;
+$layout-button-fontsize: 14px;
+$layout-button-fontweight: 700;
+$layout-button-minwidth: 120px;
+$layout-button-padding: 16px;
+$layout-button-border-radius: 50px;
+
+//image higlights
+$image-highlights-slide-title-fontsize: 40px;
+$image-highlights-slide-title-lineheight: 48px;
+$image-highlights-slide-title-weight: 400;
+
+$image-highlights-description-fontsize: 16px;
+$image-highlights-description-lineheight: 24px;
+$image-highlights-md-padding: 1rem !default;
+
+$image-highlights-overlay-opacity: 0.6 !default;
+$image-highlights-slide-height: 100vh;
+//accordian
+$accordion-bg-color: transparent;
+$accordion-item-border-color: $white-color;
+
+//parallax
+$parallax-section-default-bg-color: #f6f6f6;
+
+//loadmore
+$sxa-load-more-padding-extra: revert !default;
+
+//media-grid
+$mediagrid-grid-item-overlay-bg: transparent !default;
+$mediagrid-grid-item-link-color: $black-color !default;
+
+//ex-tabs
+$tabs-holder-bg: $white-color;
+$tabs-holder-btn-active-bg: $white-color;
+$tabs-holder-btn-active-color: $primary-color;
+
+//font size
+$layout-h4-sm-font-size: 20px;
+$layout-h1-sm-font-size: 20px;
+$layout-h1-sm-line-height: 30px;
+$layout-h4-sm-line-height: 30px;
+
+$layout-caption-font-size: 16px;
+
+//content rating
+$content-rating-active-color: $primary-color;
+
+//innerheader
+$inner-header-v3-paddingtop: 210px;
+
+//iconcard
+$icon-card-link-color: $black-color;
+$icon-card-meta-link-font-weight: 400;
+
+//footer
+$footer-poweredby-img-sep-color: transparent;
+
+//sxa form
+$ex-sitecore-form-dropdown-arrow-position-top: 38px;
+$ex-sitecore-form-dropdown-arrow-position-right: 25px;
